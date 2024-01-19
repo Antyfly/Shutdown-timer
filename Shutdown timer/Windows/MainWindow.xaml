@@ -1,0 +1,111 @@
+﻿<Window x:Class="Shutdown_timer.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shutdown_timer"
+        mc:Ignorable="d"
+        Title="Timer"
+        Height="200"
+        Width="400"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True">
+    <Grid Background="Transparent">
+        <Border CornerRadius="10"
+                BorderThickness="5"
+                Background="#FF46467C">
+            <Border CornerRadius="10"
+                    BorderThickness="6"
+                    Background="#A37FC4">
+                <Button x:Name="BtnClose"
+                        Width="30"
+                        Height="30"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Click="BtnClose_Click"
+                        Style="{StaticResource ButtonStateMenu}">
+                    <Image Source="/Image/close.png"
+                           RenderTransformOrigin="0.966,-0.242"/>
+                </Button>
+            </Border>
+        </Border>
+        <Border CornerRadius="10"
+                BorderThickness="5"
+                Background="#FF46467C"
+                Height="75"
+                Width="75"
+                Margin="30,62,290,62">
+            <Button x:Name="TimeHalf"
+                    Width="70"
+                    Height="50"
+                    Background="Transparent"
+                    Click="TimeHalf_Click"
+                    Content="30 м"
+                    FontWeight="Bold"
+                    FontStyle="Italic"
+                    FontSize="24"
+                    Style="{StaticResource ButtonStateMenu}"
+                    Foreground="White"
+                    Margin="0,0,0,8"
+                    VerticalAlignment="Bottom" />
+        </Border>
+        <Border CornerRadius="10"
+                BorderThickness="5"
+                Background="#FF46467C"
+                Height="75"
+                Width="75"
+                Margin="118,62,207,62">
+            <Button x:Name="TimeHour"
+                    Width="70"
+                    Height="50"
+                    Background="#FF46467C"
+                    Click="TimeHour_Click"
+                    Content="1 ч"
+                    FontWeight="Bold"
+                    FontStyle="Italic"
+                    FontSize="24"
+                    Style="{StaticResource ButtonStateMenu}"
+                    Foreground="White" />
+        </Border>
+        
+        <Border CornerRadius="10"
+                BorderThickness="5"
+                Background="#FF46467C"
+                Height="75"
+                Width="75"
+                Margin="204,62,121,62">
+            <Button x:Name="TimeHourHalf"
+                    Width="70"
+                    Height="50"
+                    Background="Transparent"
+                    Click="TimeHourHalf_Click"
+                    Content="1,5 ч"
+                    FontWeight="Bold"
+                    FontStyle="Italic"
+                    FontSize="24"
+                    Style="{StaticResource ButtonStateMenu}"
+                    Foreground="White" />
+        </Border>
+        <Border CornerRadius="10"
+                BorderThickness="5"
+                Background="#FF46467C"
+                Height="75"
+                Width="75"
+                Margin="289,62,36,62">
+            <Button x:Name="TimeTwoHour"
+                    Width="70"
+                    Height="50"
+                    Background="Transparent"
+                    Click="TimeTwoHour_Click"
+                    Content="2 ч"
+                    FontWeight="Bold"
+                    FontStyle="Italic"
+                    FontSize="24"
+                    Style="{StaticResource ButtonStateMenu}"
+                    Foreground="White" />
+        </Border>
+    </Grid>
+</Window>
